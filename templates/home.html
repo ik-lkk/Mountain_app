@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="hero vh-100 d-flex align-items-center" id="home">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 mx-auto text-center">
+                <h1 class="display-4 text-white"></h1>
+                <p class="my-3 text-white">このサイトでは、長野の雄大な山々を紹介しています。</p>
+                <a href="#" class="btn btn-primary me-2">ログイン</a>
+                <a href="#" class="btn btn-outline-light">掲示板へ</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h6 class="text-primary">SERVICES</h6>
+                <h1>Services</h1>
+                <p>このサイトのサービスを紹介します</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-sm-12">
+                <div class="service card-effect ">
+                    <div class="iconbox">
+                        <i class='bx bxs-photo-album'></i>
+                    </div>
+                    <h5 class="mt-4 mb-2">Pictures</h5>
+                    <p>hogehogehogehogehogehogehogehoge長野の山々の魅力を再確認してみてはいかがですか？</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="service card-effect ">
+                    <div class="iconbox">
+                        <i class='bx bxs-log-in' ></i>
+                    </div>
+                    <h5 class="mt-4 mb-2">Services</h5>
+                    <p>ユーザ登録することで、スレッドの立ち上げ、削除、スレッドへのコメント、各山へのコメントが可能になります。</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="service card-effect ">
+                    <div class="iconbox">
+                        <i class='bx bxs-message-square-detail'></i>
+                    </div>
+                    <h5 class="mt-4 mb-2">Comment</h5>
+                    <p>hogehogehogehogehogehogehogehogeぜひ、いろいろな方と意見を交わしてみてください。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="row">
+    <div class="col-lg-6 col-img"></div>
+    <div class="col-lg-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 pt-4 offset-md-1">
+                    <h6 class="text-primary">Why to choose us?</h6>
+                    <h1>Createyour Idea</h1>
+                    <p>長野県には素晴らしい自然があります。Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere facilis vitae sunt nihil incidunt magnam voluptate soluta itaque tempora? それらを伝えるためにこのサイトを作りました。</p>
+
+                    {% comment %} <div class="feature d-flex">
+                        <div class="iconbox me-3">
+                            <i class='bx bxl-google'></i>
+                        </div>
+                        <div>
+                            <h5>Create</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit esse ducimus sunt aperiam
+                                iure nihil dolore, hic ex quidem eos natus veritatis eum laudantium ullam quo
+                                repellendus, quas ratione. Officia.</p>
+                        </div>
+                    </div>
+                    <div class="feature d-flex">
+                        <div class="iconbox me-3">
+                            <i class='bx bxl-google'></i>
+                        </div>
+                        <div>
+                            <h5>Create</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit esse ducimus sunt aperiam
+                                iure nihil dolore, hic ex quidem eos natus veritatis eum laudantium ullam quo
+                                repellendus, quas ratione. Officia.</p>
+                        </div>
+                    </div>
+                    <div class="feature d-flex">
+                        <div class="iconbox me-3">
+                            <i class='bx bxl-google'></i>
+                        </div>
+                        <div>
+                            <h5>Create</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit esse ducimus sunt aperiam
+                                iure nihil dolore, hic ex quidem eos natus veritatis eum laudantium ullam quo
+                                repellendus, quas ratione. Officia.</p>
+                        </div>
+                    </div>
+                </div> {% endcomment %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% comment %} <section id="projects">
+    <div class="container -fluid">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h6 class="text-primary">Project</h6>
+                <h1>Recent Projects</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quos?</p>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="projects">
+                        <img src="{% static 'img/sample.jpg'%}" alt="">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="text-white">Project TItle</h4>
+                                <h6 class="text-white">Design</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="projects">
+                        <img src="{% static 'img/sample.jpg'%}" alt="">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="text-white">Project TItle</h4>
+                                <h6 class="text-white">Design</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="projects">
+                        <img src="{% static 'img/sample.jpg'%}" alt="">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="text-white">Project TItle</h4>
+                                <h6 class="text-white">Design</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="projects">
+                        <img src="{% static 'img/sample.jpg'%}" alt="">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="text-white">Project TItle</h4>
+                                <h6 class="text-white">Design</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="projects">
+                        <img src="{% static 'img/sample.jpg'%}" alt="">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="text-white">Project TItle</h4>
+                                <h6 class="text-white">Design</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="projects">
+                        <img src="{% static 'img/sample.jpg'%}" alt="">
+                        <div class="overlay">
+                            <div>
+                                <h4 class="text-white">Project TItle</h4>
+                                <h6 class="text-white">Design</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> {% endcomment %}
+
+
+
+{% endblock  %}

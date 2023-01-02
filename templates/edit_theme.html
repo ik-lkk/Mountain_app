@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h3>タイトル編集画面</h3>
+    <form method="POST">
+        {% csrf_token %}
+        {{edit_theme_form.as_p}}
+        <input type="submit" value="タイトル編集">
+    </form>
+    <p><a href="{% url 'website:delete_theme' id=id %}" class="navbar-brand">削除する</a></p>
+{% endblock content %}

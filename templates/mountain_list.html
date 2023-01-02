@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+{% comment %} 山の名前で検索できるように {% endcomment %}
+{% comment %} ギャラリーを見てデザインの参考に {% endcomment %}
+<h2>長野の名峰</h2>
+<form action="{% url 'website:mountain_list' %}" method="get">
+    <p>名前で検索 <input type="text" name="mountain_name" ></p>
+    <p><input type="submit" value="検索する"></p>
+</form>
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>写真</th>
+            <th>名前</th>
+            <th>説明</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for object in object_list %}
+        <tr>
+            <td><a href="{% url 'website:mountain_detail' pk=object.id %}"><img class="m_picture" src="{{object.picture.url}}"></a></td>
+            <td><a href="{% url 'website:mountain_detail' pk=object.id %}">{{object.name}}</a></td>
+            <td><p>{{object.text | truncatechars:100}}</p></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

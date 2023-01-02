@@ -1,0 +1,210 @@
+
+body {
+    font-family: "Sawarabi Mincho";
+    line-height: 1.7;
+    color: #888;
+    /* font-family: "Hannari"; */
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.04rem;
+}
+p {
+    font-size: 1.05rem;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: black;
+    text-decoration: none;
+    text-decoration-line: none;
+
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn {
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 100px;
+}
+
+.hero {
+    background-image: url("/static/img/sample.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position:relative;
+    z-index: 2;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(37, 39, 71, 0.2);
+    z-index: -1;
+}
+
+.card-effect {
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+.iconbox {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    border-radius: 100px;
+    color: white;
+    background-color: skyblue;
+    flex: none;
+}
+
+.iconbox2 {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    border-radius: 100px;
+    color: white;
+    background-color: skyblue;
+    flex: none;
+}
+
+.service {
+    position: relative;
+}
+.service::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.35s ease;
+    z-index: -1;
+}
+
+.service:hover h5,
+.service:hover p {
+    color: white;
+}
+
+.service:hover .iconbox {
+    background-color: white;
+    color: black;
+}
+
+.service:hover::after {
+    opacity: 1;
+}
+.col-img {
+    background-image: url("/static/img/sample.jpg");
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.projects {
+    position: relative;
+    overflow: hidden;
+}
+.projects .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 39, 71, 0.6);
+    padding: 30px;
+    display: flex;
+    align-items: flex-end;
+    opacity: 0;
+    transition: all 3s ease-in;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.project img {
+    transition: all 2s ease-in;
+}
+
+.projects:hover .overlay {
+    opacity: 1;
+}
+
+.projects:hover img {
+    transition: all 2s ease-in;
+    transform: scale(1.1);
+}
+
+form input.form-control {
+    height: 56px;
+}
+form .form-control {
+    border: transparent;
+    border-radius: 0;
+    background-color: rgba(0,0,0,0.04);
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+
+.footer-top {
+  background-color: black;
+  width: 100%;
+  padding: 70px;
+  padding-top: 80px;
+}
+.footer-top a {
+    color:#888;
+    text-decoration: none;
+}
+.footer-top a:hover {
+    color: white;
+}
+
+.mountain-img {
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.m_picture {
+    width: 200px;
+    height: 200px;
+}

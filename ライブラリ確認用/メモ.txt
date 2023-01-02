@@ -1,0 +1,15 @@
+デプロイする前にフォルダの外に出す
+12_16 pipfile,pipfile.lockを削除　挙動に問題なし
+12_16launch.json(.vscodeごと)　削除　問題なし
+
+brew services start postgresql
+brew services stop postgresql
+↑サーバが動いていないとエラーが発生する
+
+psql postgres
+alt + ¥ =\
+
+psql postgres -d pj_db
+select * from users;
+------------------------------------
+heroku cli install

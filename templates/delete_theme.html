@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h3>削除画面</h3>
+    <form method="POST">
+        {% csrf_token %}
+        {{edit_theme_form.as_p}}
+        <input type="submit" value="削除する">
+    </form>
+{% endblock content %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+{% for message in messages %}
+<div {% if message.tags%}class="{{message.tags}}" {% endif %}>
+    {{ message }}
+</div>
+{% endfor %}
+<section class="login-box">
+    <div class="py-5">
+        <div class="row g-3 justify-content-center">
+            <div class="col-md-8 mx-auto text-center">
+                <h1>ログイン</h1>
+            </div>
+            <form method="POST" class="row g-3 justify-content-center">
+                {% csrf_token %}
+                <div class="col-md-5 py-4">
+                    {{form.as_p}}
+                    <input type="submit" value="ログイン" class="btn btn-primary"><br>
+                    <a href="{% url 'website:regist' %}">会員登録がお済みでない方はこちら</a><br>
+                    <a href="{% url 'password_reset' %}">パスワードを忘れた方はこちら</a>
+                </div>
+            </form>
+            {% comment %} <p class="text-center">or</p>
+            <hr> {% endcomment %}
+
+            {% comment %} <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-sm-11">
+                        <button class="btn btn-primary mt-2"> <i class='bx bxl-google'></i>FaceBookでログイン</button>
+                        <button class="btn btn-primary mt-2"> <i class='bx bxl-google'></i>FaceBookでログイン</button>
+                        <button class="btn btn-primary mt-2"> <i class='bx bxl-google'></i>FaceBookでログイン</button>
+                    </div>
+                </div>
+            </div> {% endcomment %}
+        </div>
+</section>
+{% endblock %}

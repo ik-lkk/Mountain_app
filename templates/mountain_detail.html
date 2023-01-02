@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="row">
+    <div class="col-lg-6 mountain-img">
+        <img src="{{mountain.picture.url}}" alt="">
+    </div>
+    <div class="col-lg-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 pt-4 offset-md-1">
+                    <h1>{{mountain.name}}</h1>
+                    <p>{{mountain.text}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    {% for mcomment in mountain_comment %}
+    <div class="col-8 offset-1">
+        <p>名前:{{ mcomment.user }}　{{mcomment.create_at}}</p>
+        <p>{{ mcomment.comment | linebreaks }}</p>
+    </div>
+    <div class="col-10 offset-1">
+        <hr>
+    </div>
+    {% endfor %}
+    {% if user.is_authenticated %}
+    <form method="POST" class="col-10 offset-1 py-5">
+        {% csrf_token %}
+        <p class="py-1">{{form.comment}}</p>
+        <input type="submit" value="投稿する">
+    </form>
+    {% endif %}
+</section>
+{% endblock content %}

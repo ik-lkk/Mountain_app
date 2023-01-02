@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2 class="text-right">{{theme.title}}</h2>
+<div class="col-10 offset-1">
+    <p class="text-right">作成ユーザー:{{theme.user}}</p>
+    {% for comment in comments %}
+        <p>{{forloop.counter}} {{ comment.user }} {{comment.create_at}}</p>
+        <p>{{comment.comment}}</p>
+        <hr>
+    {% endfor %}
+    
+    <form method="POST">
+        {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="投稿する">
+    </form>
+</div>
+{% endblock content %}
