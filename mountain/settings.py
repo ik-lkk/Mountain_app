@@ -138,7 +138,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATIC_ROOT = str(BASE_DIR / "staticfiles")
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -167,11 +167,11 @@ AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.AllowAllUsersModelBackend']
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    STATIC_DIR,
-]
+
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [
+#     STATIC_DIR,
+# ]
 
 SUPERUSER_NAME = env("SUPERUSER_NAME")
 SUPERUSER_EMAIL = env("SUPERUSER_EMAIL")
