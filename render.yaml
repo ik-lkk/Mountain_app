@@ -14,7 +14,7 @@ services:
     startCommand: 'gunicorn mountain.wsgi:application'
     plan: free
     branch: main
-    healthCheckPath: /
+    # healthCheckPath: /
     envVars:
       - key: DATABASE_URL
         fromDatabase:
