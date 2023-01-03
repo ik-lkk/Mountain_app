@@ -20,7 +20,7 @@ from django.contrib.staticfiles.urls import static
 from django.contrib.auth import views as auth_views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('mountain/',include('website.urls')),
+    path('',include('website.urls')),
 
 
     #パスワードリセット
