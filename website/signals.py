@@ -14,10 +14,10 @@ def publish_token(sender, instance, **kwargs):
 
     # メール本文
     mail_title = "ユーザ本登録の案内"
-    text_content = f'http:127.0.0.1:8000/mountain/activate_user/{user_activate_token.token}'
+    text_content = f'https://django-render-zj9l.onrender.com/mountain/activate_user/{user_activate_token.token}'
     html_content = f"""
 		<p><strong>下記のURLにアクセスするとユーザ登録が完了します。</strong></p>
-		<p>{f'http:127.0.0.1:8000/mountain/activate_user/{user_activate_token.token}'}</p>
+		<p>{f'https://django-render-zj9l.onrender.com/mountain/activate_user/{user_activate_token.token}'}</p>
 		"""
 
     msg = EmailMultiAlternatives(
