@@ -10,6 +10,6 @@ https://django-render-zj9l.onrender.com/mountain/home
 パスワード :user
 
 #使用技術
-・Python 3.9.7
-・Django 4.0.2
-.Whitenoise 
+・Python 3.9.7　　
+・Django 4.0.2　　
+.Whitenoise　　 
