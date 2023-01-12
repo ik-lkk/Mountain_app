@@ -5,8 +5,8 @@
 URL
 https://django-render-zj9l.onrender.com/mountain/home
 
-テスト用アカウント
-名前 :user
+テスト用アカウント<br>
+名前 :user<br>
 パスワード :user
 
 # 使用技術
