@@ -6,10 +6,10 @@
 https://django-render-zj9l.onrender.com/mountain/home
 
 # テスト用アカウント
-ユーザ名: user
+ユーザ名: user<br>
 パスワード: password
 
 # 使用技術
-・Python 3.7.9
-・Django 4.0.2
+・Python 3.7.9<br>
+・Django 4.0.2<br>
 ・Whitenoise 
