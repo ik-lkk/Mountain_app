@@ -1,8 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
 {% load static %}
-{% comment %} 山の名前で検索できるように {% endcomment %}
-{% comment %} ギャラリーを見てデザインの参考に {% endcomment %}
 <h2>長野の名峰</h2>
 <form action="{% url 'website:mountain_list' %}" method="get">
     <p>名前で検索 <input type="text" name="mountain_name" ></p>

@@ -8,7 +8,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-   <title>Hello, Boxicons!</title>
+   <title>長野の名峰</title>
    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
@@ -35,10 +35,10 @@
                      <a class="nav-link text-white" href="{% url 'website:home'%}">ホーム</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="{% url 'website:mountain_list'%}">長野の名峰</a>
+                     <a class="nav-link text-white" href="{% url 'website:mountain_list'%}">山の一覧</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link text-white" href="{% url 'website:theme_list'%}">掲示板へ</a>
+                     <a class="nav-link text-white" href="{% url 'website:theme_list'%}">掲示板</a>
                   </li>
                   <li class="nav-item text-white">
                      <a class="nav-link text-white" href="{% url 'website:contact'%}">お問い合わせ</a>
@@ -65,15 +65,15 @@
          <div class="footer-top">
             <div class="container">
                <div class="row">
-                  {% comment %} <div class="col-md-4">
-                     <h2 class="text-white">マイサイト</h2>
-                  </div> {% endcomment %}
+                  <div class="col-md-4">
+                     <h2 class="text-white">長野の名峰</h2>
+                  </div> 
                   <div class="col-md-2">
-                     {% comment %} <h5 class="text-white">Brand</h5> {% endcomment %}
                      <ul class="list-unstyled">
                         <li><a href="{% url 'website:home'%}">ホーム</a></li>
-                        <li><a href="{% url 'website:mountain_list'%}">長野の名峰</a></li>
-                        <li><a href="{% url 'website:theme_list'%}">掲示板へ</a></li>
+                        <li><a href="{% url 'website:mountain_list'%}">山の一覧</a></li>
+                        <li><a href="{% url 'website:theme_list'%}">掲示板</a></li>
+                        <li><a href="{% url 'website:contact'%}">お問い合わせ</a></li>
                         <li><a href="{% url 'website:regist'%}">ユーザ登録</a></li>
                      </ul>
                   </div>

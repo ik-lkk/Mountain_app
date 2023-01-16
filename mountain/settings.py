@@ -33,8 +33,9 @@ SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
+#DEBUG = True
 
-ALLOWED_HOSTS = ["https://django-render-zj9l.onrender.com"]
+ALLOWED_HOSTS = ["https://django-render-zj9l.onrender.com","127.0.0.1"]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
