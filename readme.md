@@ -13,3 +13,8 @@ https://django-render-zj9l.onrender.com/mountain/home
 ・Python 3.7.9<br>
 ・Django 4.0.2<br>
 ・Whitenoise 
+
+# 機能一覧
+・ユーザ登録、ログイン機能
+・コメント機能
+・検索機能
