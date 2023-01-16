@@ -15,6 +15,6 @@ https://django-render-zj9l.onrender.com/mountain/home
 ・Whitenoise 
 
 # 機能一覧
-・ユーザ登録、ログイン機能
-・コメント機能
+・ユーザ登録、ログイン機能<br>
+・コメント機能<br>
 ・検索機能
