@@ -13,7 +13,7 @@ https://django-render-zj9l.onrender.com/mountain/home
 # 使用技術
 ・Python 3.9.7<br>
 ・Django 4.0.2<br>
-・Whitenoise 
+・PostgreSQL 15 <br>
 
 # 機能一覧
 ・ユーザ登録、ログイン機能<br>
