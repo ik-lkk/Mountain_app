@@ -10,6 +10,7 @@
                 {% csrf_token %}
                 <div class="col-md-5 py-4">
                     {{form.as_p}}
+                    ※パスワードは8文字以上かつ一般的でない文字列にしてください
                     <input type="submit" value="登録する" class="btn btn-primary">
                 </div>
             </form>

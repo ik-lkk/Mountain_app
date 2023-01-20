@@ -7,8 +7,8 @@
 https://django-render-zj9l.onrender.com/mountain/home
 
 # テスト用アカウント
-ユーザ名: user<br>
-パスワード: password
+メールアドレス: sample@sample.com<br>
+パスワード: password@xx
 
 # 使用技術
 ・Python 3.9.7<br>
