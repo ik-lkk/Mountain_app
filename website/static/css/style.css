@@ -128,7 +128,7 @@ section {
     opacity: 1;
 }
 .col-img {
-    background-image: url("/static/img/sample.jpg");
+    background-image: url("/static/img/kasima.jpg");
     min-height: 500px;
     background-size: cover;
     background-position: center;
