@@ -7,7 +7,7 @@
 https://django-render-zj9l.onrender.com/mountain/home
 
 # テスト用アカウント
-メールアドレス: sample@sample.com<br>
+メールアドレス: example@example.com<br>
 パスワード: password@xx
 
 # 使用技術
