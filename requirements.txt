@@ -6,7 +6,7 @@ cffi
 distlib
 dj-database-url
 dj-static
-Django==4.0.8
+Django==4.0.9
 django-environ
 filelock
 gunicorn
