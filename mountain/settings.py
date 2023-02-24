@@ -35,7 +35,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = False
 #DEBUG = True
 
-ALLOWED_HOSTS = ['django-render-d2se.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
