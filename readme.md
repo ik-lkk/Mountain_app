@@ -4,7 +4,7 @@
 ![スクリーンショット (621)](https://user-images.githubusercontent.com/121214515/213612796-57abb60e-74f4-4af1-b92a-ccf33f6148be.png)
 
 # URL
-https://django-render-zj9l.onrender.com/mountain/home
+https://mountain-app.onrender.com/mountain/home/
 
 # テスト用アカウント
 メールアドレス: example@example.com<br>
