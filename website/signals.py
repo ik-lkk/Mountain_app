@@ -17,7 +17,7 @@ def publish_token(sender, instance, **kwargs):
     text_content = f'https://django-render-zj9l.onrender.com/mountain/activate_user/{user_activate_token.token}'
     html_content = f"""
 		<p><strong>下記のURLにアクセスするとユーザ登録が完了します。</strong></p>
-		<p>{f'https://django-render-zj9l.onrender.com/mountain/activate_user/{user_activate_token.token}'}</p>
+		<p>{f'https://mountain-app.onrender.com/mountain/activate_user/{user_activate_token.token}'}</p>
 		"""
 
     msg = EmailMultiAlternatives(
