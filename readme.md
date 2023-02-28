@@ -1,7 +1,7 @@
 # 長野の名峰
 長野の山についての情報を掲載しているサイトです。<br>
 また、掲示板機能とコメント機能があり、サイト利用者同士が交流できます。
-![スクリーンショット (621)](https://user-images.githubusercontent.com/121214515/213612796-57abb60e-74f4-4af1-b92a-ccf33f6148be.png)
+![スクリーンショット (659)](https://user-images.githubusercontent.com/121214515/221767632-9f96536b-f55c-4ab2-8b5b-3a8773ae8ec1.png)
 
 # URL
 https://mountain-app.onrender.com/mountain/home/
@@ -12,7 +12,7 @@ https://mountain-app.onrender.com/mountain/home/
 
 # 使用技術
 ・Python 3.9.7<br>
-・Django 4.0.2<br>
+・Django 4.1.7<br>
 ・PostgreSQL 15 <br>
 
 # 機能一覧
